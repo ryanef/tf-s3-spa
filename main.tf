@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "this" {
-  bucket = "spa-${var.bucket_name}"
+  bucket = "${var.bucket_name}"
 
   tags = {
     Name        = "spa-s3"
@@ -16,3 +16,4 @@ resource "aws_s3_bucket_public_access_block" "this" {
   ignore_public_acls      = false
   restrict_public_buckets = false
 }
+
