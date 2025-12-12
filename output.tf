@@ -3,7 +3,6 @@ output "bucket_id" {
 }
 
 output "bucket_name" {
-  type = string
   value = aws_s3_bucket.this.bucket
 }
 output "bucket_regional_domain_name" {
